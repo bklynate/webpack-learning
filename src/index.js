@@ -19,7 +19,6 @@ document.body.appendChild(webpackImage);
 
 button.addEventListener('click', () => {
   getFooter().then(footerModule => {
-    console.log(footerModule);
     document.body.appendChild(footerModule.footer);
   });
 });
