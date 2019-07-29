@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "webpack-dev-server": "webpack-dev-server",
-    "webpack": "webpack",
+    "webpack": "rm -rf dist/ && webpack",
     "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
-    "prod": "npm run webpack -- --env.mode production",
+    "prod": "rm -rf dist/ && npm run webpack -- --env.mode production",
     "dev": "npm run webpack-dev-server -- --env.mode development --hot",
-    "prod:analyzeBundle": "npm run prod -- --env.presets analyze",
-    "prod:compress": "npm run prod -- --env.presets compress",
+    "prod:analyzeBundle": "rm -rf dist/ && npm run prod -- --env.presets analyze",
+    "prod:compress": "rm -rf dist/ && npm run prod -- --env.presets compress",
     "prod:debug": "npm run debug -- --mode production",
     "dev:debug": "npm run debug -- --mode development"
   },

@@ -1,5 +1,5 @@
 import nav from './nav';
-import { top, bottom, footer } from './footer';
+// import { top, bottom, footer } from './footer';
 import makeButton from './button';
 import { makeColorStyle } from './button-styles';
 import css from './footer.css';
@@ -22,5 +22,3 @@ button.addEventListener('click', () => {
     document.body.appendChild(footerModule.footer);
   });
 });
-
-console.log(nav(), top, bottom, makeColorStyle('cyan'));
